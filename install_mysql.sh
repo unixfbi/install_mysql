@@ -5,7 +5,7 @@ yum install libaio -y
 mkdir /opt/mysql/ -pv 
 tar zxf mysql-5.7.22-linux-glibc2.12-x86_64.tar.gz  -C /opt/mysql/
 ln -s /opt/mysql/mysql-5.7.22-linux-glibc2.12-x86_64 /usr/local/mysql
-mkdir /data/mysql/mysql3306/{data,logs,tmp} -pv
+mkdir /data/mysql/mysql3306/{data,logs,undolog,tmp} -pv
 
 chown -R mysql.mysql /usr/local/mysql
 
